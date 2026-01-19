@@ -1,6 +1,9 @@
+import { useEffect, useRef } from "react"
 import { useForm } from "../hooks/useForm"
 
 export const FormularioComponent = () => {
+    const focusRef = useRef()
+
     const initialForm = {
         userName: '',
         email: '',
@@ -13,11 +16,18 @@ export const FormularioComponent = () => {
         console.log(formState)
     }
 
+    useEffect(() => {
+        focusRef.current.focus()
+    }, [])
+
+
     return (
         <form onSubmit={onSubmit}>
             <div className="form-group">
                 <label htmlFor="userName">user name</label>
                 <input
+                    ref={focusRef}
+
                     type="text"
                     className="form-control"
                     name="userName"
