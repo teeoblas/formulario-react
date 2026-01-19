@@ -21,4 +21,4 @@ El objetivo principal es capturar la información ingresada por el usuario (nomb
 
 Podés ver el proyecto funcionando acá:
 
-[**🔗 Link al Deploy en Netlify**](https://tu-sitio-en-netlify.app)
+[**🔗 Link al Deploy en Netlify**](https://deluxe-faloodeh-52c2f6.netlify.app/)
